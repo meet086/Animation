@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aniomation</title>
+    <style>
+
+        #r4{
+            height: 700px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        #r4c2{
+            height: 200px;
+            width: 220px;
+            border: 5px solid;
+            animation: rotate 10s infinite;
+            position: relative;
+        }
+        @keyframes rotate{
+            0%{
+                position: relative;
+                top: 5px;
+                left: 0px;
+                transform: rotate(0deg);
+            }
+            25%{
+                background-color: red;
+                top: 300px;
+                left: 400px;
+                transform: rotate(100deg);
+            }
+            50%{
+                background-color: green;
+                top: 700px;
+                left: 600px;
+                transform: rotate(190deg);
+            }
+            75%{
+                background-color: yellow;
+                top: 500px;
+                left: 800px;
+                transform: rotate(2500deg);
+            }
+            100%{
+                background-color: blue;
+                top: 0px;
+                left: 1000px;
+                transform: rotate(0deg);
+            }
+        }
+        #r4 div {
+           float: left;
+           height: 60px;
+           padding-top: 100px;
+           text-align: center;
+           background-color: black;
+           animation: rotate 10s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="r4">
+            <div id="r4c2"></div>
+        </div>
+    </div>
+</body>
+</html>
